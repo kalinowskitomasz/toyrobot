@@ -33,3 +33,9 @@ REPORT" | node index.js
 
 To execute the tests simply run
 `npm run test`
+
+## Tradeoffs
+
+- Parser is not super fool proof, it might accept things like `MOVE 1`, which is ok as long as more relaxed, DOM like approach is fine
+
+- direction is just stored simply as javascripty enum string, storing it as a degree radius would be more elegant but also harder to read
